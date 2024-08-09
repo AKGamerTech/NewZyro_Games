@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    display: flex;
 }
 
 .header-div {
@@ -8,7 +9,7 @@ body{
     justify-content: center; /* Optional, if you want to center the image horizontally */
   }
   
-  .header-img {
+.header-img {
     object-fit: cover; /* Ensures the image covers the container */
     width: 100%; /* Make the image fill the container */
     height: 100%; /* Make the image fill the container */
@@ -17,7 +18,7 @@ body{
     margin: 1em 25%;
   }
   
-  .main-block {
+.main-block {
     display: block;
     justify-content: center;
     align-items: center;
@@ -28,11 +29,34 @@ body{
     background-color: rgba(0, 0, 0, 0.6);
   }
 
-  .main-text-block {
-    margin: 0 2em;
+.main-text-block{
+  background-color: rgba(245, 222, 179, 0.1);
+  padding: 5px;
+  border-radius: 20px;
+  margin: 1em 5%;
+}
+
+.main-text-block a{
+  color: wheat;
+  background-color: rgba(245, 222, 179, 0.1);
+  padding: 5px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.main-text-block a:hover{
+  text-decoration: none;
+  background-color: rgba(245, 222, 179, 0.3);
+  padding: 5px;
+  border-radius: 1em;
+}
+
+
+.main-text {
+    font-size: xx-large;
+    
   }
 
-  .main-img-block {
+.main-img-block {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -43,15 +67,15 @@ body{
     margin: 1em;
   }
 
-  .main-img {
+.main-img {
     transform: scale(0.8);
     width: 100%;
     display: block;
-    border-radius: 40px;
+    border-radius: 20px;
     transition: all 0.3s ease-in-out;
   }
   
-  .main-img:hover {
+.main-img:hover {
     transform: scale(0.9); /* Scales the image slightly on hover */
     transition: all 0.3s ease-in-out;
     filter: brightness(1.3);

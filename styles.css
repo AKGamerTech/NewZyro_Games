@@ -1,0 +1,58 @@
+body{
+    background-color: black;
+}
+
+.header-div {
+    display: flex; /* Optional, if you want to center the image */
+    align-items: center; /* Optional, if you want to center the image vertically */
+    justify-content: center; /* Optional, if you want to center the image horizontally */
+  }
+  
+  .header-img {
+    object-fit: cover; /* Ensures the image covers the container */
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    display: block;
+    overflow: hidden;
+    margin: 1em 25%;
+  }
+  
+  .main-block {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    margin: 0 10em;
+    padding: 5px 0px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .main-text-block {
+    margin: 0 2em;
+  }
+
+  .main-img-block {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex: 1;
+    box-sizing: border-box;
+    overflow: hidden; /* Ensures the zoom effect doesn't cause overflow */
+    position: relative; /* Needed to position the border correctly */
+    margin: 1em;
+  }
+
+  .main-img {
+    transform: scale(0.8);
+    width: 100%;
+    display: block;
+    border-radius: 40px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .main-img:hover {
+    transform: scale(0.9); /* Scales the image slightly on hover */
+    transition: all 0.3s ease-in-out;
+    filter: brightness(1.3);
+  }
